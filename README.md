@@ -1,5 +1,5 @@
-# Hackintosh-LEGION-Y7000P-I7-9750H  
-> 联想拯救者 Y7000P I7-9750H 准完美级 EFI
+# Hackintosh-LEGION-Y7000P-I7-9750H & I5-9300H  
+> 联想拯救者 Y7000P I7-9750H & I5-9300H 准完美级 EFI
 
 ![Git Sync](https://github.com/gclm/Hackintosh-LEGION-Y7000P-I7-9750H/actions/workflows/Auto%20Gitee.yml/badge.svg)
 
@@ -13,13 +13,14 @@
 [![](https://img.shields.io/badge/Gitee-fe7300)](https://gitee.com/gclm/Hackintosh-LEGION-Y7000P-I7-9750H/tree/master/Course/OCAuxiliaryTools/README.md)
 [![](https://img.shields.io/badge/Alist-blue)](https://loveglaze.cn/TOOLS/Hackintosh/Hackintosh-LEGION-Y7000P-I7-9750H/Course/OCAuxiliaryTools)
 
-## 仓库
+## 原作者仓库
 [![](https://img.shields.io/badge/GitHub-ff79c6&)](https://github.com/gclm/Hackintosh-LEGION-Y7000P-I7-9750H)
 [![](https://img.shields.io/badge/Gitee-fe7300)](https://gitee.com/gclm/Hackintosh-LEGION-Y7000P-I7-9750H)
 
 ## 电脑配置
 
 ```
+I7-9750
 电脑型号  联想 81T1
 操作系统  Microsoft Windows 11 企业版 Insider Preview (64位)
 CPU  (英特尔)Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz(2592 MHz)
@@ -31,7 +32,18 @@ CPU  (英特尔)Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz(2592 MHz)
 声卡  Realtek High Definition Audio
 网卡  Intel(R) Wi-Fi 6 AX200 160MHz
 ```
-
+I5-9300H
+电脑型号	联想 拯救者 Y7000P 2019 PG0 笔记本电脑
+操作系统	Windows 11 专业版 64位
+处理器	英特尔 Core i5-9300H @ 2.40GHz 四核
+主板	联想 LNVNB161216
+内存	32 GB ( GLOWAY DDR4 3200MHz 16GB x 2 )
+主硬盘	西数 WDC PC SN730 SDBPNTY-1T00-1101 (1024 GB / 固态硬盘)
+主显卡	NVIDIA GeForce GTX 1650 ( 4 GB / 联想 )
+显示器	京东方 BOE084D ( 15.5 英寸  )
+网卡	英特尔 Wireless-AC 9560
+声卡	瑞昱 High Definition Audio (SST)
+```
 ## EFI 信息
 - 配置: i7-9750H/UHD630/AX200
 - 屏蔽 PM981 补丁
@@ -48,7 +60,7 @@ CPU  (英特尔)Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz(2592 MHz)
 ├── Clover       Clover引导（已过时）
 ├── LICENSE      开发协议
 ├── Course       安装教程
-├── OpenCore     OC引导
+├── OpenCore     OC引导（增加 I5-9300H 配置文件）（独显配置文件）
 ├── README.md    说明文档
 └── Script       修复补丁
 ```
@@ -69,7 +81,8 @@ CPU  (英特尔)Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz(2592 MHz)
 | 2022.06.12 | v2.6 | OpenCore 0.8.2(开发版)，支持Ventura                          |
 | 2024.10.21 | v2.7 | OpenCore 1.0.2,支持MacOS Sequoia 15.0.1,WiFi蓝牙需要[OCLP补丁](https://github.com/laobamac/OCLP-Mod/releases)驱动 |
 | 2025.12.07 | v2.8 | OpenCore 1.0.6,支持MacOS Sequoia/Tahoe,WiFi蓝牙需要[OCLP3.0.0<u>补丁</u>](https://github.com/lzhoang2801/OpenCore-Legacy-Patcher/releases/tag/3.0.0) |
-
+| 2026.10.17 | v2.9 | OpenCore 1.0.6，增加支持 I5-9300H配置。
+| 2026.10.17 | v3.0 | OpenCore 1.0.6，取消独显屏蔽，开启1401独显驱动。
 更新简介：
 ```
 OpenCore：
